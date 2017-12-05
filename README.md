@@ -7,9 +7,13 @@ So the idea is to auto register every service to route 53 with a unique name. Th
 Environment Variables
 -----------------------
 AWS_ACCESS_KEY = #AWS ACCESS KEU
+
 AWS_SECRET_KEY = # AWS SECRET KEY
+
 SERVICE_NAME = # Service name eg: "kafka" this will result in the script registering kafka1.domain.com
+
 HEALTH_CHECK_PORT = #A port that we could use to connect and check if the service with the given name is working If it works we will not allocate that name.
+
 DOMAIN_NAME = #hosted zone name Do not use the . at the end.
 
 To Run
